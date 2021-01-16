@@ -2,6 +2,7 @@ package de.ah.sews.controller;
 
 import de.ah.sews.entity.Guest;
 import de.ah.sews.service.GuestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class GuestController {
 
     private final GuestService guestService;
 
+    @Autowired
     public GuestController(GuestService guestService) {
         this.guestService = guestService;
     }

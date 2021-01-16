@@ -1,11 +1,14 @@
 package de.ah.sews.service;
 
 import de.ah.sews.entity.Guest;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 
+@Service
 public class GuestService {
 
     public List<Guest> getGuest() {
@@ -32,6 +35,7 @@ public class GuestService {
         );
 
     }
+
     private LocalDate getDate(int days) {
         LocalDate date = LocalDate.now();
 

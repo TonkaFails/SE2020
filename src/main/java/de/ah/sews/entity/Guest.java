@@ -4,7 +4,10 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 
+
 public class Guest {
+
+    private Long Id;
 
     private String firstname;
     private String name;
@@ -49,4 +52,28 @@ public class Guest {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Guest)) return false;
+
+        Guest guest = (Guest) o;
+
+        return getId().equals(guest.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getId().hashCode();
+    }
 }
+
