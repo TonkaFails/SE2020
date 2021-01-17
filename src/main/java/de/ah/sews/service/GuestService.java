@@ -13,6 +13,7 @@ public class GuestService {
 
     public List<Guest> getGuest() {
 
+        // hier wäre die Datenbank anbindung
         return List.of(
                 new Guest(
                         "Anton",

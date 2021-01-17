@@ -1,34 +1,26 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Preisrechner</title>
-    </head>
-    <body>
-        <form name="form" onsubmit="calc()" method="POST" id="form-dates">
-            <input type="date" name="begin" id="begin" required>
-            <input type="date" name="end" id="end" required>
-            <input type="submit" name="submit" id="sendButton">
-        </form>
-        <script>
 
-            function calc(){
-                
-                var dateBegin = document.getElementById("begin").value;
-                var dateEnd = document.getElementById("end").value;
+<head>
+    <meta charset="utf-8">
+    <title>Preisrechner</title>
+    <script src="scripts/calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/calcstyle.css">
+</head>
 
-                dateBegin = dateBegin.split('-');
-                dateEnd = dateEnd.split('-');
-                
-                var dtB = new Date(dateBegin[0], dateBegin[1], dateBegin[2]);
-                var dtE = new Date(dateEnd[0], dateEnd[1], dateEnd[2]);
+<body>
+    <h1 id="headline">PREISRECHNER</h1>
+    <form name="form" onsubmit="return calc();" method="POST" id="form-dates">
+        <input type="date" name="begin" id="begin" required><br>
+        <input type="date" name="end" id="end" required><br><br>
+        <input type="submit" name="submit" id="sendButton">
+    </form>
+    <br>
+    <h2 id="endprice"></h2><br>
+    <h3 id="pricetype"></h3>
+    <span id="prices" title="Winter: November-Februar | Sommer: Juni-September">PREISE PRO NACHT<br> regulär: 110€
+        Winter: 150€ Sommer: 130€ </span>
+    <span id="back"><a href="welcome.html">Startseite</a></span>
 
-                if(dateBegin[1] == 1) alert("da haben wir zu");
-        
-                alert(dateBegin[1]);
-                //alert(dtB);
-                //alert(dtE);
-            }
-        </script>
-    </body>
+</body>
+
 </html>

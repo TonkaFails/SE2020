@@ -1,17 +1,27 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>WELCOME</title>
-        <meta charset="utf-8">
-        <style>
-            body { background-color: #2a2627; margin:20px;}
-            h1 { color: #ffffff}
-        </style>
-    </head>
-    <body>
-        <h1>Osenmeiers Buchungssystem</h1>
-        <a href="/guest">Gäste</a><br>
-        <a href="contactform.html">Kontakt</a>
-        <a href="calculator.html">Preisrechner</a>
-    </body>
+
+<head>
+    <title>WELCOME</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/welcomestyle.css">
+</head>
+
+<body>
+    <h1>Osenmeiers Buchungssystem</h1>
+    <button onclick="location.href='/guest'">Gäste</button><br>
+    <button onclick="location.href='contactform.html'">Kontakt</button><br>
+    <button onclick="location.href='calculator.html'">Preisrechner</button><br>
+    <span id="clock"></span>
+
+    <script type="text/javascript">
+        var clockElement = document.getElementById('clock');
+
+        function clock() {
+            clockElement.textContent = new Date().toString() + "(Client)";
+        }
+
+        setInterval(clock, 1000);
+    </script>
+</body>
+
 </html>

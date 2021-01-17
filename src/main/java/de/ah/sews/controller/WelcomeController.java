@@ -10,7 +10,7 @@ public class WelcomeController {
     @RequestMapping("/")
     public ModelAndView callWelcome(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("welcome.html");
+        modelAndView.setViewName("/welcome.html");
         return modelAndView;
     }
 }

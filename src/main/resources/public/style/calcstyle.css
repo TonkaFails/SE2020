@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #2a2627;
+    margin: 20px;
+    text-align: center;
+    top: 50%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 50, 0.5)), url(../monoviso.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#form-dates {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+}
+
+#sendButton {
+    background: #ff5722;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    width: 10%;
+}
+
+#sendButton:hover {
+    background: blue;
+}
+
+#headline {
+    position: relative;
+    margin: 50px;
+}
+
+#endprice {
+    color: aqua;
+}
+
+#prices {
+
+    position: absolute;
+    bottom: 10px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.8);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+#pricetype {
+    color: aqua;
+}
+
+#back {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+    background: green;
+}
