@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Kontaktformular</title>
         <script src="../static/helper.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
     </header>
     <body>
         <div class="contact-title">
@@ -14,8 +14,8 @@
         <form name="contact" id="contact-form" method="post" onsubmit="return validateForm()">
             <input type="text" name ="name" class="form-control" placeholder="Ihr Name" required><br>
             <input type="email" name="email" class="form-control" placeholder="Ihre E-Mail" required><br>
-            <input type="text" name="phone" class="form-control" placeholder="Telefonnummer(optional)"><br>
-            <textarea name="message" class="form-control" rows="4" cols="50" placeholder="Nachricht"></textarea>
+            <input type="text" name="phone" class="form-control" placeholder="Telefonnummer(optional)" formnovalidate><br>
+            <textarea name="message" class="form-control" rows="4" cols="50" placeholder="Nachricht" formnovalidate></textarea>
             <p>Ich stimme der Datenverarbeitung zu
             <input type="checkbox" name="consent" id="check"></p>
             <input type="submit" name="send" value="Senden" onclick="thankyou()" class="form-control submit" id="buttonSend">
