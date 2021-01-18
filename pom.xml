@@ -51,6 +51,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>sews-docker-spring</finalName>
     </build>
 
 </project>
