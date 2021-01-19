@@ -7,3 +7,5 @@
 ### -> localhost:8080
 
 #### Repository dient nur dazu um den sourcecode anzuschauen
+
+#### funktionalität auf microsoft edge oder älteren browser-/versionen nicht getestet
