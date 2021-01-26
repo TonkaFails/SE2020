@@ -7,3 +7,4 @@
 ### -> localhost:8080
 
 #### Repository dient nur dazu um den sourcecode anzuschauen
+Funktionalitäten der Webanwendung 
