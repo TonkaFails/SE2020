@@ -19,6 +19,8 @@ function calc() {
     dateBegin = dateBegin.split('-');
     dateEnd = dateEnd.split('-');
 
+    pricetype.innerHTML = "regulärer Preis";
+
     if (dateBegin[1] <= 2 || dateBegin[1] >= 11) {
         price = 150;
         pricetype.innerHTML = "Winterpreis";

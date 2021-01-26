@@ -13,12 +13,12 @@ public class GuestService {
 
     public List<Guest> getGuest() {
 
-        // hier wäre die Datenbank anbindung
+        // hier wäre die Datenbankanbindung
         return List.of(
                 new Guest(
                         "Anton",
                         "Hofmeier",
-                        new HashMap<LocalDate, LocalDate>() {{
+                        new HashMap<>() {{
                             put(getDate(0), getDate(10));
                             put(getDate(20), getDate(40));
                         }},
@@ -27,7 +27,7 @@ public class GuestService {
                 new Guest(
                         "Kilian",
                         "Osenstätter",
-                        new HashMap<LocalDate, LocalDate>() {{
+                        new HashMap<>() {{
                             put(getDate(23), getDate(40));
                             put(getDate(56), getDate(70));
                         }},

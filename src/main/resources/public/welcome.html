@@ -11,13 +11,13 @@
     <button onclick="location.href='/guest'">Gäste</button><br>
     <button onclick="location.href='contactform.html'">Kontakt</button><br>
     <button onclick="location.href='calculator.html'">Preisrechner</button><br>
-    <span id="clock"></span>
+    <span id="clock" title="Clientsided"></span>
 
     <script type="text/javascript">
         var clockElement = document.getElementById('clock');
 
         function clock() {
-            clockElement.textContent = new Date().toString() + "(Client)";
+            clockElement.textContent = new Date().toString();
         }
 
         setInterval(clock, 1000);

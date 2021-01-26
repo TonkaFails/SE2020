@@ -4,9 +4,10 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 
-
+//@Entity   bei Datenbank anbindung
 public class Guest {
 
+    // primary key
     private Long Id;
 
     private String firstname;
